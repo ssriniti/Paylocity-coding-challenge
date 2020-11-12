@@ -1,0 +1,42 @@
+Documentation:
+
+The aim of this application is to calculate the cost of benefits of each employee and his/her dependents for every paycheck in a year and show the total after deducting the costs.
+I have developed the application with two main components - Presentation(HTML page) and Business logic(JavaScript page)
+index.html page contains the view of the page and script.js contains the business logic and interactive elements of the page
+I have not included any storage layer here and framework
+
+
+jquery selectors:
+addspouseButton - to add the spouse name if needed
+removespouseRow - to remove the spouse name textbox
+addchildButton - to add the child/children name if needed
+removechildRow - to remove the child/children name textbox
+
+Methods:
+showDiv() - to filter the paycheck no. dropdown list - if Jan or Dec is selected in the month dropdown, 'III' value will be shown in the paycheck no. dropdown. Else, it will be hidden.
+calculateTotal() - to calculate the total after deducting the cost of benefits
+toArray() - to convert the nodelist of childnames into a list ( if more than one child is added)
+sendToServer() - to send all the details to the server and display the total
+viewPaycheck() - to display the deductions
+resetForms() - to reset the form
+
+
+Calculation:
+
+26 paychecks
+2000$ / paycheck
+
+total pay = 26 * 2000 = 52000$
+
+1000$ should be deducted/ year for the employee
+500$ should be deducted/ year for the children/spouse
+
+10% discount on the deduction for employees/dependent name starting with 'A'
+
+1. 1000 can be deducted 40$/paycheck for 25 times - employee
+2. 500 can be deducted 20$/paycheck for 25 times - dependent
+3. Paychecks are divided in a way that Jan and Dec will have 3 paychecks and rest of the months have 2 paychecks
+4. Cost of benefits won't be deducted for III paycheck in December
+
+
+

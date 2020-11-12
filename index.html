@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>MyPay - Employee Portal</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body onload="form1.reset();">
+    <header>
+        <div id="col-1">
+            <h1>
+                <span style="text-align:left; color: #ED820E;">My</span><span style="text-align:left; color: #ED2939;">Pay</span>
+            </h1>
+            <p style="font-family: Arial; font-size:30px">Dashboard</p>
+            <br>
+            <form id="form1" name="mypay_dashboard" onsubmit="return calculateTotal()">
+                <table>
+					<tr id="id">
+                        <td>
+                            <span style="text-align:left; font-family: Arial; color: black;padding: 10px;font-size:15px">Employee ID</span><span style="text-align:left; color: #ED2939;">*</span>
+                        </td>
+                        <td><input type="text" id="employeeid" style="width: 300px; height:40px;" name="employeeid" placeholder="Enter your ID" autocomplete="off" maxlength="20" required>
+                        </td>
+                    </tr>
+
+                    <tr id="q1">
+                        <td>
+                            <span style="text-align:left; font-family: Arial; color: black;padding: 10px;font-size:15px">Employee name</span><span style="text-align:left; color: #ED2939;">*</span>
+                        </td>
+                        <td><input type="text" id="employeeinput" style="width: 300px; height:40px;" name="employeeinput" placeholder="Enter the full name" autocomplete="off" maxlength="50" required>
+                        </td>
+                    </tr>
+
+                    <tr id="q2">
+                        <td>
+                            <input type='button' value='Add Spouse' style="color: black;padding: 10px;font-size: 15px;border: none;cursor: pointer;" id='addspouseButton'></td>
+                    </tr>
+
+                    <tr id="q3">
+                        <td><input type='button' value='Add Child' style="color: black;padding: 10px;font-size: 15px;border: none;cursor: pointer;" id='addchildButton'></td>
+                    </tr>
+
+                </table>
+				<br>
+				<select id= "monthD" style="color: black;padding: 10px;font-size: 15px;border: none;cursor: pointer; display: block;" name="month" value="Month" onchange="showDiv();" required>
+						<option>Select a month</option>
+						<option value="jan">Jan</option>
+						<option value="feb">Feb</option>
+						<option value="mar">Mar</option>
+						<option value="apr">Apr</option>
+						<option value="may">May</option>
+						<option value="june">June</option>
+						<option value="july">July</option>
+						<option value="aug">Aug</option>
+						<option value="sep">Sep</option>
+						<option value="oct">Oct</option>
+						<option value="nov">Nov</option>
+						<option value="dec">Dec</option>
+					</select>
+                <br>
+				<select id="termD" style="color: black;padding: 10px;font-size: 15px;border: none;cursor: pointer; display: block;" name="paycheckNo" value="paycheckNo" required>
+						<option>Paycheck No.</option>
+						<option value="first">I</option>
+						<option value="second">II</option>
+						<option id="third" value="third">III</option>
+					</select>
+				
+                <input type="submit" id="generatePaycheck" style="color:black;position: absolute; right:50px; background-color:gray;padding-bottom:5px; padding: 15px;font-size: 20px;border: none;cursor: pointer;" value="View my Paycheck">
+            </form>
+        </div>
+
+        <div id="col-3">
+            <img src="./LogoTag.png">
+        </div>
+    </header>
+</body>
+
+<script src="script.js ">
+</script>
+</html>

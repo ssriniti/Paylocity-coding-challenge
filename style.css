@@ -1,0 +1,168 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#col-1 {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+#col-2 {
+    position: relative;
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+#col-3 {
+    position: relative;
+    width: 30%;
+    float: right;
+    height: 100%;
+}
+
+.text-blue {
+    color: #0099ff;
+    font-size: 10 em;
+}
+
+.text-blue-inline {
+    color: #0099ff;
+    font-size: 10 em;
+    display: inline;
+}
+
+
+p.inline {
+    display: inline;
+}
+
+img {
+    margin-top: 1.2em;
+    height: 70px;
+    width: 50;
+	position: absolute;
+	right: 0;
+}
+
+.col-1 #q1{
+	color: #DFF2800
+}
+
+.childname{
+	height: 20px;
+    width: 50;
+}
+td {
+  width: 300px;
+  padding: 5px;
+}
+
+.q1 #employeeinput{
+	width: 300px;
+	padding: 20px;
+}
+
+
+/*Month Dropdown Button */
+.dropbtn1 {
+  color: black;
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn1:hover, .dropbtn1:focus {
+  background-color: light gray;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.text-left {
+  position: relative;
+  display: inline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-month {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-size: 15px;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-month p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-month p:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Date Dropdown Button */
+.dropbtn2 {
+  color: black;
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  display:block;
+  
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-date {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  font-size: 15px;
+  min-width: 140px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-date p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-date p:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
